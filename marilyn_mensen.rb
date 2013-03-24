@@ -1,6 +1,7 @@
 require "json"
 require "sinatra"
 require "sinatra/json"
+require "sinatra/cross_origin"
 require "nokogiri"
 require "open-uri"
 
@@ -36,6 +37,7 @@ def menu_entries(doc, menu)
 end
 
 get '/:mensa_id' do
+  cross_origin
   content_type :json
 
   doc = Nokogiri::HTML(open(BASE_URL + params[:mensa_id]))

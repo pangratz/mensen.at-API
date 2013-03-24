@@ -20,6 +20,7 @@ GEM
       rack-test
       sinatra (~> 1.3.0)
       tilt (~> 1.3)
+    sinatra-cross_origin (0.2.0)
     tilt (1.3.6)
 
 PLATFORMS
@@ -29,3 +30,4 @@ DEPENDENCIES
   nokogiri
   sinatra
   sinatra-contrib
+  sinatra-cross_origin
