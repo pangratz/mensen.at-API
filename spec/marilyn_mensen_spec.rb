@@ -23,4 +23,11 @@ describe MarilynMensen, "#parse" do
 
     result["Choice"].length.should == 20
   end
+
+  it "returns nil when the passed document is nil" do
+    marilyn_mensen = MarilynMensen.new
+
+    result = marilyn_mensen.parse nil
+    result.should be_nil
+  end
 end

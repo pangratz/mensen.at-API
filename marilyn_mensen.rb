@@ -9,7 +9,7 @@ class MarilynMensen
       "Menü Classic 1" => menu_entries(doc, "Menü Classic 1"),
       "Menü Classic 2" => menu_entries(doc, "Menü Classic 2"),
       "Choice" => menu_item(doc, "Choice")
-    }
+    } unless doc == nil
   end
 
   private
