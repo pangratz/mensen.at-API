@@ -1,2 +1,2 @@
-require './marilyn_mensen'
+require './web'
 run Sinatra::Application
